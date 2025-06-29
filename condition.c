@@ -1,18 +1,53 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-    int age;
-    printf("enter age : ");
-    scanf("%d", &age);
-    
-    if(age>=18){
-        printf("adult \n");
-        printf("they can vote \n");
-        printf("they cna drive \n");
+int main()
+{
+    char day;
+    printf("enter day(1-7) : ");
+    scanf("%s", &day);
 
-    }else{
-        printf("not adult \n");
+    // if(age>=18){
+    //     printf("adult \n");
+
+    // }else if(age > 13  && age<18){
+    //     printf("teenager \n");
+    // }
+    // else{
+    //     printf("child \n");
+    // }
+
+    // age >= 18 ? printf("adult \n"): printf("not adult \n");
+
+    switch (day)
+    {
+    case 's':
+        printf("sunday \n");
+        break;
+
+    case 'm':
+        printf("monday \n");
+        break;
+
+    case 't':
+        printf("tuesday \n");
+        break;
+
+    case 'w':
+        printf("wednesday \n");
+        break;
+
+    case 'T':
+        printf("thursday \n");
+        break;
+
+    case 'f':
+        printf("friday \n");
+        break;
+    case 'S':
+        printf("saturday \n");
+        break;
+
+    default:printf("not a valid day \n");
     }
-    printf("thank you");
     return 0;
 }
