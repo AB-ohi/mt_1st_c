@@ -1,43 +1,38 @@
 #include <stdio.h>
-// #include<math.h>
-// int main()
-// {
-//     float side;
-//     printf("enter side");
-//     scanf("%f", &side);
 
-//     printf("area is: %f", side * side);
-//     return 0;
-// }
-
-
-// int main (){
-//     float radius;
-//     printf("enter radius : ");
-//     scanf("%f", &radius);
-//     float pi = 3.14;
-//     printf("area of circle is : %f", pi*radius*radius);
-//     return 0;
-// }
-
-// int main (){
-//     int x;
-//     printf("enter a number: ");
-//     scanf("%d", &x);
-//     printf("%d", x%2 == 0);
-
-
-//     return 0;
-// }
 
 int main (){
-    // int isMonday = 1 ;
-    // int isRaining = 0;
-    // printf("%d", isMonday && isRaining );
 
-    int x;
-    printf("enter number: ");
-    scanf("%f", &x);
-    printf("%d \n", x>9 && x<100);
-    return 0;
+  int mark;
+  printf("student mark :");
+  scanf("%d", &mark);
+//   if(mark >= 0 && mark< 30){
+//     printf("student is fail");
+//   }
+//   else if (mark >=30 && mark<=100){
+//     printf("student is pass");
+//   }
+//   else{
+//     printf("wrong mark");
+//   }
+if (mark<30){
+    printf("C \n");
+}else if(mark >= 30 && mark<70){
+    printf("B \n");
+
+}
+else if(mark>=70 && mark < 90){
+    printf("A \n");
+}
+ else if (mark >= 90 && mark <= 100){
+    printf("A+");
+}
+
+else{
+    printf("wrong mark");
+}
+
+
+
+return 0;
 }
